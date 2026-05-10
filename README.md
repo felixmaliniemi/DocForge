@@ -23,7 +23,7 @@
 DocForge automatically scans and analyzes source code structures:
 * **Class Extraction:** Detects class definitions across languages
 * **Function Parsing:** Extracts functions and methods with docstrings/comments
-* **Smart Context Detection:** Language-aware parsing logic per file type
+* **Smart Context Detection (language-aware parsing per file type):** Language-aware parsing logic per file type
 
 ---
 
@@ -81,45 +81,58 @@ Simple terminal-based workflow:
 
 ```bash
 git clone https://github.com/yourusername/docforge.git
+
 cd docforge
+
 pip install googletrans==4.0.0rc1
+```
 
 Optional: Translation features require googletrans.
 The tool works fully without it.
 
 🚀 Usage
 ▶ Run the CLI
+```bash
 python -m core_engine.cli.cli
+```
+---
 
 🧭 Interactive Flow
 
-You will be prompted for:
+You will be promted for:
 
-📁 Project path
-📄 Output format (txt, md, html)
-🌍 Translation language (en, sv, none)
+* 📁 Project path
+* 📄 Output format (txt, md, html)
+* 🌍 Translation language (en, sv, none)
+
+---
 
 📌 Example
-Project folder or file [./]: ./my-project
-Format (txt/md/html) [txt]: md
-Translation (en/sv/none) [none]: en
+* Project folder or file [./]: ./my-project
+* Format (txt/md/html) [txt]: md
+* Translation (en/sv/none) [none]: en
 
 Output:
-documentation.md
+* documentation.md
+
+---
 
 🏗 Project Structure
+```bash
 DocForge/
 ├── core_engine/
-│   ├── cli/                # CLI interface
-│   ├── engine/             # Core generation engine
-│   ├── config/             # Mapping system
-│   ├── parsers/            # Language-specific parsers
-│   ├── utils/              # Utilities + logger
-│   └── services/           # Translation service
+│ ├── cli/ # CLI interface
+│ ├── engine/ # Core generation engine
+│ ├── config/ # Mapping system
+│ ├── parsers/ # Language-specific parsers
+│ ├── utils/ # Utilities + logger
+│ └── services/ # Translation service
 │
-├── test_files/             # Example codebases
-├── vscode-extension/       # Future VSCode integration
+├── test_files/ # Example codebases
+├── vscode-extension/ # Future VSCode integration
 └── README.md
+```
+---
 
 ⚙️ How It Works
 1. 📂 File Discovery
@@ -134,10 +147,11 @@ Each language uses a dedicated parser module
 
 Extracts:
 
-Classes
-Methods
-Functions
-Documentation comments
+* Classes
+* Methods
+* Functions
+* Documentation comments
+
 4. 🌐 Translation (Optional)
 
 Converts extracted documentation into target language
@@ -150,30 +164,41 @@ Formats results into TXT / Markdown / HTML
 
 Saves documentation file to disk
 
+---
+
 🚫 Exclusions
 
 DocForge automatically ignores:
 
-core_engine/
-vscode-extension/
-__pycache__/
-.git/
-node_modules/
+* core_engine/
+* vscode-extension/
+* __pycache__/
+* .git/
+* node_modules/
+
+---
+
 🔮 Roadmap
-VS Code extension integration
-CLI flags (--exclude, --format)
-Config file support
-Faster incremental parsing
-Package distribution (pip install docforge)
-Advanced HTML UI search system
+* VS Code extension integration
+* CLI flags (--exclude, --format)
+* Config file support
+* Faster incremental parsing
+* Package distribution (pip install docforge)
+* Advanced HTML UI search system
+
+---
+
 🤝 Development Philosophy
 
 DocForge was built as a modular, extensible system designed for:
 
-scalability across languages
-clean parser separation
-future IDE integration
-automation of documentation workflows
+* scalability across languages
+* clean parser separation
+* future IDE integration
+* automation of documentation workflows
+
+---
+
 📜 License
 
 MIT License
@@ -182,4 +207,4 @@ MIT License
 
 Built for developers who hate writing documentation — but love clean code.
 
-</div> ```
+</div>
