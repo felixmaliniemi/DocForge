@@ -1,0 +1,30 @@
+/* Detta är en enkel CSS-fil */
+
+/* Ändrar bakgrundsfärg på sidan */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Stil för rubriken */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+/* Stil för knappen */
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover-effekt på knappen */
+button:hover {
+    background-color: #0056b3;
+}

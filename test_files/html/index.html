@@ -1,0 +1,26 @@
+<!-- Detta är en enkel HTML-fil med rubrik och knapp -->
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Exempel HTML</title>
+    <!-- Länkar till CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Rubrik -->
+    <h1>Hej världen!</h1>
+
+    <!-- Knapp med click-event -->
+    <button id="myButton">Klicka på mig</button>
+
+    <!-- Enkel JavaScript -->
+    <script>
+        // Detta script ändrar texten på knappen när den klickas
+        document.getElementById("myButton").addEventListener("click", function() {
+            this.textContent = "Klickad!";
+        });
+    </script>
+</body>
+</html>
